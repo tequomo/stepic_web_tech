@@ -19,13 +19,22 @@ from django.contrib import admin
 #urlpatterns = [
 #    url(r'^admin/', admin.site.urls),
 #]
-urlpatterns = [
-    url(r'^$', include ('qa.urls')),
-    url(r'^login/', include ('qa.urls')),
-    url(r'^signup/', include ('qa.urls')),
+#urlpatterns = [
+#    url(r'^$', include ('qa.urls')),
+#    url(r'^login/', include ('qa.urls')),
+#    url(r'^signup/', include ('qa.urls')),
 #    url(r'^question/<([0-9]{3})>/', include ('qa.urls')),
-    url(r'^question/<'int:id'>/', include ('qa.urls')),
-    url(r'^ask/', include ('qa.urls')),
-    url(r'^popular/', include ('qa.urls')),
-    url(r'^view/', include ('qa.urls')),
+#   url(r'^question/<'int:id'>/', include ('qa.urls')),
+#    url(r'^ask/', include ('qa.urls')),
+#    url(r'^popular/', include ('qa.urls')),
+#    url(r'^view/', include ('qa.urls')),
+#]
+urlpatterns = [
+    url(r'^$', qa.views.test),
+    url(r'^login/', qa.views.test),
+    url(r'^signup/', qa.views.test),
+    url(r'^question/<'int:id'>/', qa.views.test), 
+    url(r'^ask/', qa.views.test),
+    url(r'^popular/', qa.views.test),
+    url(r'^view/', qa.views.test),
 ]
