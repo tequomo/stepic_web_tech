@@ -30,11 +30,11 @@ from django.contrib import admin
 #    url(r'^view/', include ('qa.urls')),
 #]
 urlpatterns = [
-    url(r'^$', qa.views.test),
-    url(r'^login/', qa.views.test),
-    url(r'^signup/', qa.views.test),
-    url(r'^question/<int:id>/', qa.views.test), 
-    url(r'^ask/', qa.views.test),
-    url(r'^popular/', qa.views.test),
-    url(r'^view/', qa.views.test),
+    url(r'^$', views.test),
+    url(r'^login/', views.test),
+    url(r'^signup/', views.test),
+    url(r'^question/<int:id>/', views.test), 
+    url(r'^ask/', views.test),
+    url(r'^popular/', views.test),
+    url(r'^view/', views.test),
 ]

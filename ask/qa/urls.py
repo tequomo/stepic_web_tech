@@ -22,12 +22,12 @@ from django.contrib import admin
 #    url(r'^admin/', admin.site.urls),
 #]
 urlpatterns = [
-    url(r'^$', qa.views.test, name='index'),				        #/
-    url(r'^login/', qa.views.test, name='login'),			        #/login/
-    url(r'^signup/', qa.views.test, name='signup'),	           	#/signup/
+    url(r'^$', views.test, name='index'),				        #/
+    url(r'^login/', views.test, name='login'),			        #/login/
+    url(r'^signup/', views.test, name='signup'),	           	#/signup/
 #    url(r'^question/<([0-9]{3})>/', qa.views.test, name='question'), #/question/<255>/
-    url(r'^question/<int:id>/', qa.views.test, name='question'), #/question/<255>/
-    url(r'^ask/', qa.views.test, name='ask'),			           	#/ask/
-    url(r'^popular/', qa.views.test, name='popular'),	         	#/popular/
-    url(r'^view/', qa.views.test, name='view'),		          	#/view/
+    url(r'^question/<int:id>/', views.test, name='question'), #/question/<255>/
+    url(r'^ask/', views.test, name='ask'),			           	#/ask/
+    url(r'^popular/', views.test, name='popular'),	         	#/popular/
+    url(r'^view/', views.test, name='view'),		          	#/view/
 ]
