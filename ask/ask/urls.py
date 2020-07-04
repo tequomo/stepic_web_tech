@@ -17,19 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from qa import views
 
-#urlpatterns = [
-#    url(r'^admin/', admin.site.urls),
-#]
-#urlpatterns = [
-#    url(r'^$', include ('qa.urls')),
-#    url(r'^login/', include ('qa.urls')),
-#    url(r'^signup/', include ('qa.urls')),
-#    url(r'^question/<([0-9]{3})>/', include ('qa.urls')),
-#   url(r'^question/<'int:id'>/', include ('qa.urls')),
-#    url(r'^ask/', include ('qa.urls')),
-#    url(r'^popular/', include ('qa.urls')),
-#    url(r'^view/', include ('qa.urls')),
-#]
 urlpatterns = [
     url(r'^$', views.test),
     url(r'^login/', views.test),
